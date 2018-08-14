@@ -1,0 +1,98 @@
+/*!
+ * Required: cmts_bundle.css
+ * Theme Name: Default
+ */
+
+/*avatar*/
+.comments .avatar-image-container {
+  background-image: url(../../resources/anon-default.png);
+  background-color: #eee;
+  height: 60px;
+  width: 60px;
+}
+/*coment*/
+.comments .comment {
+  position: relative;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+/*coment content*/
+.comments .comment-content {
+  color: #757575;
+  padding: .5rem 0;
+}
+/*coment block*/
+.comments .comment-block {
+  font-size: 1.1rem;
+  line-height: 1.6rem;
+  margin-left: 5.5rem;
+}
+/*delete comment*/
+.comments .deleted-comment {
+  background-color: #f3f3f3;
+  padding: 1rem;
+  color: #757575;
+}
+/*toggle*/
+.comments .thread-toggle {
+  position: absolute;
+  right: 0;
+  top: 1rem;
+  z-index: 40;
+}
+.comments .thread-toggle a {
+  font-size: 0;
+  color: #757575;
+}
+.comments .thread-toggle a::before {
+  content: "\61";
+  font-size: 20px;
+  transition: -webkit-transform .3s;
+  transition: transform .3s;
+  transition: transform .3s, -webkit-transform .3s;
+  height: 7px;
+}
+.comments .thread-toggle.thread-expanded a::before {
+  -webkit-transform: rotate(-180deg);
+          transform: rotate(-180deg);
+}
+/*user*/
+.comments .comment-header .user {
+  margin-right: .2rem;
+}
+.comments .comment-header .user, 
+.comments .comment-header .user a {
+  font-style: normal;
+  font-weight: 500;
+  color: #262626;
+}
+/*datetime*/
+.comments .comment-header .datetime > a {
+  color: #ccc;
+  font-weight: 500;
+  font-size: .95rem;
+}
+/*replies*/
+.comments .comment-replies .comment-block {
+  margin-left: 4rem;
+}
+.comments .comment-replies .comment, 
+.comments .comment-replybox-single,
+.comments .comment-replybox-thread {
+  margin-left: 5.5rem;
+}
+/* form */
+.comments .comment-form {
+  padding-top: 1rem;
+}
+
+/* Dark background? 
+-----------------------------------------*/
+.is-dark .comments .comment-header .user,
+.is-dark .comments .comment-header .user a {
+    color: #fff;
+}
+.is-dark .comments .deleted-comment {
+    color: #FFF;
+    background: rgba(255, 255, 255, 0.1);
+}
