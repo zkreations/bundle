@@ -1,31 +1,36 @@
 /*!
  * Required: cmts_bundle.css
- * Theme Name: Default
+ * Theme Name: Anime
  */
 
 /*avatar*/
 .comments .avatar-image-container {
   background-image: url(../../resources/anon-default.png);
   background-color: #eee;
-  height: 60px;
-  width: 60px;
+  height: 50px;
+  width: 50px;
+  border-radius: 4px;
+  box-shadow: 0 2px 3px -2px rgba(0,0,0,.5), 0 0 2px 0 rgba(0,0,0,.1);
 }
 /*coment*/
 .comments .comment {
   position: relative;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+.comments .comment:not(:last-child) {
+  border-bottom: 1px solid rgba(0,0,0,.08);
 }
 /*coment content*/
 .comments .comment-content {
   color: #757575;
-  padding: .5rem 0;
+  padding: 1rem 0;
 }
 /*coment block*/
 .comments .comment-block {
   font-size: 1.1rem;
   line-height: 1.6rem;
-  margin-left: 5.5rem;
+  margin-left: 5rem;
 }
 /*delete comment*/
 .comments .deleted-comment {
@@ -47,11 +52,14 @@
 .comments .thread-toggle a::before {
   content: "\61";
   font-size: 20px;
+  transition: -webkit-transform .3s;
   transition: transform .3s;
+  transition: transform .3s, -webkit-transform .3s;
   height: 7px;
 }
 .comments .thread-toggle.thread-expanded a::before {
-  transform: rotate(-180deg);
+  -webkit-transform: rotate(-180deg);
+          transform: rotate(-180deg);
 }
 /*user*/
 .comments .comment-header .user {
@@ -69,6 +77,23 @@
   font-weight: 500;
   font-size: .95rem;
 }
+/*reply btn*/
+.comment-actions > a {
+    padding: .5em 1em;
+    display: inline-block;
+    color: #444;
+    opacity: 1;
+    border-radius: 2px;
+    background-color: #f2f2f2;
+    font-size: 13px;
+    text-transform: uppercase;
+    font-weight: 500;
+    transition: opacity .3s;
+}
+.comment-actions > a:hover {
+    color: #444;
+    opacity: .75;
+}
 /*replies*/
 .comments .comment-replies .comment-block {
   margin-left: 4rem;
@@ -76,7 +101,7 @@
 .comments .comment-replies .comment, 
 .comments .comment-replybox-single,
 .comments .comment-replybox-thread {
-  margin-left: 5.5rem;
+  margin-left: 5rem;
 }
 /* form */
 .comments .comment-form {
@@ -85,6 +110,10 @@
 
 /* Dark background? 
 -----------------------------------------*/
+.is-dark .comment-actions > a {
+  color: #FFF;
+  background: rgba(255, 255, 255, 0.1);
+}
 .is-dark .comments .comment-header .user,
 .is-dark .comments .comment-header .user a {
   color: #fff;
