@@ -1,0 +1,104 @@
+/*!
+ * Widgets Bundle v1.0.2
+ * Copyright 2018 zkreations
+ * Developed by Daniel Abel M. (instagram.com/danie.abel)
+ * Licensed under MIT (github.com/zkreations/bundle/blob/master/LICENSE)
+ */
+@font-face {
+  font-family: "wgts-bundle";
+  src: url("../../resources/fonts/wgts-bundle.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+.widget {
+    font-size: 14px;
+    line-height: 1.5;
+}
+.widget-content img,
+.user-content img,
+.contact-form-widget img,
+.wikipedia-search-main-container img,
+.post-summary img {
+    height: auto;
+    max-width: 100%;
+    display: inline-block;
+}
+input.gsc-search-button,
+input.gsc-input,
+.contact-form-name,
+.contact-form-email,
+.contact-form-email-message,
+.follow-by-email-inner input[type=text],
+.follow-by-email-inner input[type=submit],
+.wikipedia-search-input,
+.wikipedia-search-button,
+.contact-form-button-submit,
+#Wikipedia1_wikipedia-search-more a {
+    padding: 1em;
+    max-width: 100%;
+    width: 100%;
+}
+input.gsc-search-button,
+.follow-by-email-inner input[type=submit],
+.wikipedia-search-button,
+.contact-form-button-submit,
+#Wikipedia1_wikipedia-search-more a {
+    cursor: pointer;
+    font-weight: 500;
+    transition: opacity .3s;
+}
+input.gsc-search-button:hover,
+.follow-by-email-inner input[type=submit]:hover,
+.wikipedia-search-button:hover,
+.contact-form-button-submit:hover,
+#Wikipedia1_wikipedia-search-more a:hover {
+    opacity: 0.8;
+}
+.gsc-search-box td.gsc-input, 
+.follow-by-email-inner tr > td:first-child {
+    width: 100%;
+    padding-right: 1em;
+}
+input.gsc-search-button,
+.follow-by-email-inner input[type=submit] {
+    width: 50px;
+    text-indent: -99999px;
+}
+.popular-posts .item-title > a::before,
+.popular-posts > ul > li > a::before,
+.hierarchy .zippy::before,
+td.gsc-search-button::before,
+.follow-by-email-inner td:last-child::before,
+.Profile .widget-content ul li a::before,
+[class*=label-widget-content] .label-size::before,
+.LinkList .widget-content > ul > li > a::before,
+[class*=label-widget-content] li::before {
+    font-family: "wgts-bundle" !important;
+    content: attr(data-icon);
+    font-style: normal !important;
+    font-weight: normal !important;
+    font-variant: normal !important;
+    text-transform: none !important;
+    speak: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-size: 22px;
+    display: inline-block;
+    vertical-align: middle;
+    height: 18px;
+}
+td.gsc-search-button::before,
+.follow-by-email-inner td:last-child::before {
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	position: absolute;
+    z-index: 5;
+    pointer-events: none;
+    color: rgba(0,0,0,0.5);
+}
+.gsc-search-box td.gsc-search-button,
+.follow-by-email-inner td {
+    position: relative;
+}

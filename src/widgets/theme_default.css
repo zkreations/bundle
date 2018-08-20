@@ -1,0 +1,630 @@
+/*!
+ * Required: wgts_bundle.css
+ * Theme Name: Default
+ */
+
+/*forms*/
+input.gsc-search-button,
+input.gsc-input,
+.contact-form-name,
+.contact-form-email,
+.contact-form-email-message,
+.follow-by-email-inner input[type=text],
+.follow-by-email-inner input[type=submit],
+.wikipedia-search-input,
+.wikipedia-search-button,
+.contact-form-button-submit,
+#Wikipedia1_wikipedia-search-more a {
+    box-shadow: inset 0 2px 5px 0 rgba(0, 0, 0, 0.075), inset 0 0 0 1px rgba(0, 0, 0, 0.1), 0 0 0 3px rgba(0, 0, 0, 0.05);
+    border-radius: 3px;
+    font-size: 1.1em;
+    color: rgba(0, 0, 0, 0.75);
+    background-color: #f9f9f9;
+}
+input.gsc-search-button,
+.follow-by-email-inner input[type=submit],
+.wikipedia-search-button,
+.contact-form-button-submit,
+#Wikipedia1_wikipedia-search-more a{
+    background-color: #c7c7c7;
+}
+/*if => forms is dark */
+.is-dark input.gsc-search-button,
+.is-dark input.gsc-input,
+.is-dark .contact-form-name,
+.is-dark .contact-form-email,
+.is-dark .contact-form-email-message,
+.is-dark .follow-by-email-inner input[type=text],
+.is-dark .follow-by-email-inner input[type=submit],
+.is-dark .wikipedia-search-input,
+.is-dark .wikipedia-search-button,
+.is-dark .contact-form-button-submit,
+.is-dark #Wikipedia1_wikipedia-search-more a {
+    box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.15) inset;
+    background-color: rgba(255, 255, 255, 0.05);
+    color: #fff;
+}
+
+/* FeaturedPost
+-------------------------------------------------*/
+.post-summary h3 {
+    font-size: 1.2em;
+    margin-bottom: 1em;
+    text-align: center;
+    padding-top: .5em;
+}
+.post-summary p {
+    padding: 1.5em;
+    margin-bottom: 1em;
+    font-weight: 400;
+}
+
+
+/* BlogSearch
+-------------------------------------------------*/
+.gsc-search-box td.gsc-search-button::before {
+	content: "\6d";
+}
+
+/* FollowByEmail
+-------------------------------------------------*/
+.follow-by-email-inner td:last-child::before {
+	content: "\67";
+}
+
+/* Wikipedia
+-------------------------------------------------*/
+.widget.Wikipedia br {
+    display: none;
+}
+.wikipedia-search-wiki-link {
+    padding-bottom: 1em;
+    text-align: center;
+    display: block;
+    padding-top: .5em;
+}
+.wikipedia-searchtable span {
+    display: block;
+}
+.wikipedia-input-box {
+    margin-bottom: 1em;
+}
+.wikipedia-search-results-header {
+    display: block;
+    text-align: center;
+    padding: 1em;
+    margin-bottom: 1em;
+}
+#wikipedia-search-result-link a {
+    display: block;
+    padding: .8em 1em;
+    margin-bottom: 2px;
+}
+#Wikipedia1_wikipedia-search-more a {
+    display: block;
+    text-align: center;
+    padding: .8em;
+    font-size: 1em;
+}
+/* ContactForm
+-------------------------------------------------*/
+.form {
+    font-weight: 500;
+}
+.form br {
+    line-height: 1.8em;
+}
+.form input[class^=contact-form], 
+.form textarea {
+    margin: .5em 0 1em;
+    width: 100%;
+}
+.form input.contact-form-button {
+    margin: 0;
+}
+
+/* Profile
+-------------------------------------------------*/
+.Profile .widget-content {
+    box-shadow: 0 0 0 1px rgba(0, 0, 0, .1) inset, 0 1px 3px -1px rgba(0, 0, 0, .2);
+    padding: 0;
+    position: relative;
+    text-align: center;
+    background: #fff;
+    border-radius: 4px;
+    overflow: hidden;
+}
+.Profile .widget-content > a::before {
+    background-color: #333333;
+    background-repeat: no-repeat;
+    background-size: cover;
+    content: "";
+    height: 180px;
+    width: 100%;
+    display: block;
+    background-image: url(https://goo.gl/0u5Ky4);
+}
+.Profile .widget-content .profile-img {
+    overflow: hidden;
+    border-radius: 50%;
+    margin-top: -40px;
+}
+.Profile .g-profile {
+    display: block;
+    background-image: none!important;
+    font-size: 1em;
+    font-weight: 700;
+}
+.Profile .widget-content .profile-datablock {
+    padding: 1em 0;
+    margin: 0;
+}
+.Profile .widget-content .profile-textblock {
+    padding: 1em 2em;
+    margin: 0;
+}
+.Profile .widget-content .profile-link {
+    display: none;
+}
+/*option => team*/
+.Profile .widget-content > ul {padding: 1em;}
+.Profile .widget-content > ul > li {
+    text-align: left;
+    display: block;
+}
+.Profile .widget-content > ul > li:not(:last-child) {
+    margin-bottom: .5em;
+}
+.Profile .widget-content > ul > li > a {
+    padding: 1em;
+    width: 100%;
+    margin: 0;
+    display: flex;
+    align-items: center;
+}
+.Profile .widget-content > ul > li > a::before {
+    content: "\62";
+    margin-right: 4px;
+}
+/* BlogArchive
+-------------------------------------------------*/
+/*option => dropdown*/
+#ArchiveList select {
+    padding: 1em 1.5em;
+    width: 100%;
+    cursor: pointer;
+    position: relative;
+    border-radius: 3px;
+    font-weight: 500;
+    -webkit-appearance: none;
+    border: none;
+}
+#ArchiveList select>option {
+    background: #fff;
+}
+/*option => simple list*/
+#ArchiveList .flat > li {
+    display: block;
+    padding: .8em 1em;
+    margin-bottom: 5px;
+    text-transform: capitalize;
+}
+
+/*option => hierarchy*/
+#ArchiveList>div>.hierarchy,
+#ArchiveList>div>.hierarchy>li,
+.hierarchy .posts>l,
+.hierarchy>li {
+    margin: 0;
+}
+.hierarchy .expanded>ul {
+    display: block;
+}
+.hierarchy .collapsed>ul {
+    display: none;
+}
+.hierarchy {
+    margin: 8px 0 8px 8px;
+}
+ul.hierarchy {
+    margin-top: 8px;
+    padding: 0;
+}
+ul.hierarchy,
+ul.posts {
+    margin-left: 20px;
+}
+.hierarchy>li {
+    position: relative;
+}
+.hierarchy>li>a {
+    vertical-align: middle;
+    z-index: 5;
+    font-weight: 700;
+    font-size: .9em;
+}
+
+.hierarchy>li .toggle:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 40px;
+    border-radius: 3px;
+    pointer-events: none;
+    z-index: -1;
+}
+.hierarchy .toggle {
+    display: inline-block;
+    margin: 8px 0 6px 8px;
+}
+.hierarchy .toggle:hover {
+    text-decoration: none;
+}
+.hierarchy .zippy {
+    display: block;
+    width: 26px;
+    height: 26px;
+    position: relative;
+    color: transparent;
+}
+.hierarchy .zippy::before {
+    content: "\76";
+}
+.hierarchy .posts {
+    padding: 1em 1em 0;
+}
+.hierarchy .posts a {
+    display: block;
+    padding-bottom: 5px;
+}
+/*if => Archive is dark */
+.is-dark #ArchiveList select>option {
+    background-color: #111111;
+}
+/* Image
+-------------------------------------------------*/
+.widget.Image .caption {
+    padding: 1em;
+    display: block;
+    margin-top: 1em;
+}
+/*option => header*/
+header .widget.Image img {
+    width: 100%;
+}
+header .widget.Image .widget-content {
+    position: relative;
+    padding: 0;
+}
+header .widget.Image .caption {
+    position: absolute;
+    bottom: 1em;
+    right: 1em;
+    color: #fff;
+    background: rgba(0, 0, 0, .75);
+}
+
+/* label
+-------------------------------------------------*/
+.widget-content[class*=" cloud-"] .label-size {
+    margin: 0 5px 5px 0;
+}
+[class*=label-widget-content] {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+[class*=label-widget-content] ul {
+    width: 100%;
+}
+[class*=label-widget-content] .label-size,
+[class*=label-widget-content] li {
+    padding: 1em;
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+}
+[class*=label-widget-content] .label-size::before,
+[class*=label-widget-content] li::before {
+    content: "\72";
+    margin-right: 4px;
+}
+[class*=label-widget-content] a {
+    font-size: 1em;
+    font-weight: 500;
+}
+[class*=label-widget-content] .label-count,
+[class*=label-widget-content] li span {
+    margin-left: 4px;
+    font-weight: 500;
+    color: #757575;
+}
+/*option => list*/
+.widget-content[class*=" list-"] li {
+    margin-bottom: 5px;
+    width: 100%;
+}
+
+/* PageList
+-------------------------------------------------*/
+.PageList .widget-content > ul > li > a {
+    padding: 1em;
+    display: block;
+    background: #f2f2f2;
+    color: #555555;
+    font-size: 1em;
+    font-weight: 500;
+    margin-bottom: 2px;
+}
+.PageList .widget-content > ul > li.selected > a {
+    background: #c7c7c7;
+    color: #262626;
+}
+/*option --> sidebar*/
+header .PageList .widget-content > ul {
+    display: flex;
+    flex-wrap: wrap;
+}
+header .PageList .widget-content > ul > li > a {
+    margin-bottom: 0;
+}
+
+/* LinkList
+-------------------------------------------------*/
+.LinkList .widget-content > ul {
+    display: flex;
+    flex-wrap: wrap;
+}
+.LinkList .widget-content > ul > li > a::before {
+    content: "\71";
+    margin-right: 4px;
+}
+.LinkList .widget-content > ul > li {
+    display: flex;
+    flex-wrap: wrap;
+}
+.LinkList .widget-content > ul > li > a {
+    padding: 1em;
+    margin-bottom: 5px;
+    margin-right: 5px;
+    border-radius: 2px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+}
+/* PopularPosts
+-------------------------------------------------*/
+.popular-posts > ul > li:not(:last-child) {
+    padding-bottom: 1em;
+}
+.popular-posts .item-thumbnail {
+    margin-right: 1em;
+    float: left;
+}
+.popular-posts .item-title > a,
+.popular-posts > ul > li > a {
+    padding: 1em;
+    display: block;
+    margin-bottom: .6em;
+    background: #e1e1e1;
+    font-weight: 700;
+    font-size: 1em;
+    overflow: hidden;
+}
+.popular-posts .item-title > a::before,
+.popular-posts > ul > li > a::before {
+	content: "\75";
+	float: left;
+	margin-right: 4px;
+}
+.popular-posts .item-snippet {
+    padding: 1.5em;
+    font-weight: 500;
+}
+
+/* Stats
+-------------------------------------------------*/
+.graph-counter-wrapper {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+.graph-counter-wrapper > span {
+    padding: .4em;
+    display: block;
+    color: #fff;
+    background-color: #313131;
+    font-size: 1.3em;
+    margin: 2px;
+    border-radius: 3px;
+    position: relative;
+    border: 1px solid rgba(0, 0, 0, .9);
+    box-shadow: 0 60px 60px -30px rgba(255, 255, 255, .05) inset, 0 0 0 2px rgba(0, 0, 0, .15), 0 1px 0 0 rgba(255, 255, 255, .15) inset;
+}
+.graph-counter-wrapper > span .blind-plate {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    display: block;
+    border-top: 1px solid rgba(0, 0, 0, .7);
+    margin-top: -1px;
+    left: 0;
+    border-bottom: 1px solid rgba(255, 255, 255, .15);
+}
+
+/* BlogList
+-------------------------------------------------*/
+.blog-list-container .blog-icon {
+    position: absolute;
+    right: 1em;
+    top: .9em;
+    display: block;
+}
+.blog-list-container .blog-icon > img {
+    display: block;
+}
+.blog-list-container ul[id*=blogs] li {
+    position: relative;
+}
+.blog-list-container > ul > li:not(:last-child) {
+    margin-bottom: 1em;
+}
+.blog-list-container .blog-title > a {
+    padding: 1em;
+    background: #e1e1e1;
+    display: block;
+    margin-bottom: .5em;
+    font-size: 1em;
+    font-weight: 500;
+    border-radius: 3px;
+    line-height: 1;
+}
+.blog-list-container .item-thumbnail {
+    float: left;
+    margin-right: 15px;
+    margin-bottom: 15px;
+}
+.blog-list-container .item-content {
+    padding: 1em;
+    overflow: hidden;
+}
+.blog-list-container .item-title > a {
+    font-weight: 700;
+}
+.blog-list-container .item-time {
+    padding-top: 1em;
+    margin-top: 1em;
+    border-top: 1px dashed rgba(0, 0, 0, .2);
+    font-size: .9em;
+    opacity: .5;
+}
+/*if => PopularPosts is dark */
+.is-dark .blog-list-container .item-time {
+    border-color: rgba(255, 255, 255, 0.5);
+}
+/* Default Styles
+-------------------------------------------------*/
+.blog-list-container .item-content,
+.popular-posts .item-snippet,
+header .PageList .widget-content > ul,
+.LinkList .widget-content > ul > li > a,
+[class*=label-widget-content] .label-size,
+[class*=label-widget-content] li,
+.hierarchy>li .toggle:before,
+#ArchiveList select,
+#ArchiveList .flat > li,
+.wikipedia-search-results-header,
+#wikipedia-search-result-link a,
+.Profile .widget-content > ul > li > a,
+.post-summary p,
+.widget.Image .caption {
+    background-color: #f2f2f2;
+}
+.form,
+.blog-list-container .item-title > a,
+.blog-list-container .blog-title > a,
+.popular-posts .item-title > a,
+.popular-posts > ul > li > a,
+.popular-posts .item-snippet,
+.LinkList .widget-content > ul > li > a,
+.LinkList .widget-content > ul > li > a::before,
+.hierarchy .posts a,
+.hierarchy .zippy::before,
+#ArchiveList select,
+.wikipedia-search-results-header,
+#wikipedia-search-result-link a,
+.post-summary p,
+.hierarchy>li>a,
+[class*=label-widget-content] a,
+[class*=label-widget-content] .label-size::before,
+[class*=label-widget-content] li::before {
+    color: #555555;
+}
+.blog-list-container .blog-title > a:hover,
+#ArchiveList .flat>li>a,
+.post-summary h3 a,
+.Profile .g-profile {
+    color: #262626;
+}
+.blog-list-container .item-thumbnail,
+.post-summary .image,
+.popular-posts .item-thumbnail {
+    border: 5px solid #fff;
+    box-shadow: 0 0 0 1px rgba(0, 0, 0, .1), 0 2px 2px 0 rgba(0, 0, 0, .2);
+}
+.Profile .widget-content > ul > li > a:hover,
+#ArchiveList select:hover,
+#ArchiveList .flat>li>a:hover,
+.hierarchy>li>a:hover,
+.hierarchy .posts a:hover,
+[class*=label-widget-content] a:hover,
+.PageList .widget-content > ul > li > a:hover,
+.LinkList .widget-content > ul > li > a:hover,
+.popular-posts .item-title > a:hover,
+.popular-posts > ul > li > a:hover,
+#wikipedia-search-result-link a:hover,
+.post-summary h3 a:hover,
+.blog-list-container .item-title>a:hover {
+    opacity: .8;
+}
+
+/* Is dark
+-------------------------------------------------*/
+.is-dark .form,
+.is-dark .blog-list-container .item-title > a,
+.is-dark .blog-list-container .blog-title>a,
+.is-dark .Profile .widget-content .g-profile,
+.is-dark .wikipedia-search-results-header,
+.is-dark #wikipedia-search-result-link a,
+.is-dark .popular-posts .item-title > a,
+.is-dark .popular-posts > ul > li > a,
+.is-dark .popular-posts .item-snippet,
+.is-dark .PageList .widget-content > ul > li > a,
+.is-dark .PageList .widget-content > ul > li.selected > a,
+.is-dark .LinkList .widget-content > ul > li > a,
+.is-dark .LinkList .widget-content > ul > li > a::before,
+.is-dark .widget.Image .caption,
+.is-dark .hierarchy .posts a,
+.is-dark .hierarchy > li > a,
+.is-dark .hierarchy .zippy::before,
+.is-dark #ArchiveList select,
+.is-dark .hierarchy > li .toggle:before,
+.is-dark #ArchiveList .flat > li > a,
+.is-dark .post-summary h3 a,
+.is-dark .post-summary p,
+.is-dark [class*=label-widget-content] a,
+.is-dark [class*=label-widget-content] .label-size::before,
+.is-dark [class*=label-widget-content] li::before {
+    color: #ffffff;
+}
+.is-dark .blog-list-container .item-content,
+.is-dark .wikipedia-search-results-header,
+.is-dark #wikipedia-search-result-link a,
+.is-dark .popular-posts .item-snippet,
+.is-dark header .PageList .widget-content > ul,
+.is-dark .PageList .widget-content > ul > li > a,
+.is-dark header .PageList .widget-content > ul > li > a,
+.is-dark .LinkList .widget-content > ul > li > a,
+.is-dark .widget.Image .caption,
+.is-dark #ArchiveList .flat > li,
+.is-dark .hierarchy > li .toggle:before,
+.is-dark #ArchiveList select,
+.is-dark .post-summary p,
+.is-dark .Profile .widget-content,
+.is-dark [class*=label-widget-content] .label-size,
+.is-dark [class*=label-widget-content] li {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+.is-dark .blog-list-container .blog-title>a,
+.is-dark .popular-posts .item-title > a,
+.is-dark .Profile .widget-content > ul > li > a,
+.is-dark .PageList .widget-content > ul > li.selected > a {
+    background: rgba(0, 0, 0, 0.5);
+}
+.is-dark .blog-list-container .item-thumbnail,
+.is-dark .post-summary .image,
+.is-dark .popular-posts .item-thumbnail {
+    border: 5px solid rgba(255, 255, 255, 0.1);
+}
