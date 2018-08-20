@@ -1,9 +1,10 @@
 # changelog
 
-## v1.0.2
+## v1.0.3
 
 - Tema anime para comentarios
-- Tema default para widgets
+- Tema anime para comentarios
+- Archivos renombrados
 
 ## v1.0.0
 
