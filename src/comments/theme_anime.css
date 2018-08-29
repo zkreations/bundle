@@ -119,3 +119,6 @@
   color: #FFF;
   background: rgba(255, 255, 255, 0.1);
 }
+.is-dark .comments .comment:not(:last-child) {
+    border-color: rgba(255, 255, 255, 0.1);
+}
