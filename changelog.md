@@ -1,6 +1,6 @@
 # changelog
 
-## v1.0.4
+## v1.0.5
 
 - **theme_anime.css**: Mejora de version oscura 
 
