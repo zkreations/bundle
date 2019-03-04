@@ -1,6 +1,5 @@
 # changelog
 
-
 ## v1.0.6
 
 - Tema Leyre para comentarios
