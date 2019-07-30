@@ -1,0 +1,136 @@
+/*!
+ * Required: cmts_bundle.css
+ * Theme Name: Kuro
+ */
+
+/*avatar*/
+.comments .avatar-image-container {
+  background-image: url(../../resources/anon-default.png);
+  background-color: #eee;
+  height: 50px;
+  width: 50px;
+  border-radius: 4px;
+  box-shadow: 0 2px 3px -2px rgba(0,0,0,.5), 0 0 2px 0 rgba(0,0,0,.1);
+  border-radius: 50%;
+}
+/*coment*/
+.comments .comment {
+  position: relative;
+  padding: 1.5rem;
+  background: #fff;
+  border-radius: 4px;
+  box-shadow: 0 2px 6px rgba(0,21,64,.14), 0 10px 20px rgba(0,21,64,.05);
+}
+.comments .comment:not(:last-child) {
+  margin-bottom: 1rem;
+}
+/*coment content*/
+.comments .comment-content {
+  color: #757575;
+  padding: .5rem 0 1rem;
+}
+/*coment block*/
+.comments .comment-block {
+  font-size: 1.1rem;
+  line-height: 1.6rem;
+  margin-left: 5rem;
+}
+/*delete comment*/
+.comments .deleted-comment {
+  background-color: #f3f3f3;
+  padding: 1rem;
+  color: #757575;
+}
+/*toggle*/
+.comments .thread-toggle {
+  position: absolute;
+  right: 1rem;
+  top: 1rem;
+  z-index: 40;
+}
+.comments .thread-toggle a {
+  font-size: 0;
+  color: #757575;
+}
+.comments .thread-toggle a::before {
+  content: "\61";
+  font-size: 20px;
+  transition: transform .3s;
+  height: 7px;
+}
+.comments .thread-toggle.thread-expanded a::before {
+  transform: rotate(-180deg);
+}
+/*user*/
+.comments .comment-header .user {
+  margin-right: .2rem;
+}
+.comments .comment-header .user, 
+.comments .comment-header .user a {
+  font-style: normal;
+  font-weight: 500;
+  color: #262626;
+}
+/*datetime*/
+.comments .comment-header .datetime > a {
+  color: #ccc;
+  font-weight: 500;
+  font-size: .95rem;
+}
+/*reply btn*/
+.comment-actions > a {
+    padding: .5em 1em;
+    display: inline-block;
+    color: #444;
+    opacity: 1;
+    border-radius: 2px;
+    background-color: #f2f2f2;
+    font-size: 13px;
+    text-transform: uppercase;
+    font-weight: 500;
+    transition: opacity .3s;
+}
+.comment-actions > a:hover {
+    color: #444;
+    opacity: .75;
+}
+/*replies*/
+.comment-replies ol {
+    margin-top: 1.5rem;
+}
+.comments .comment-replies .comment-block {
+  margin-left: 4rem;
+}
+.comments .comment-replies .comment, 
+.comments .comment-replybox-single,
+.comments .comment-replybox-thread {
+  margin-left: 4rem;
+}
+/* form */
+.comments .comment-form {
+  padding-top: 1rem;
+}
+
+/* Dark background? 
+-----------------------------------------*/
+.is-dark .comment-actions > a {
+  color: #FFF;
+  background: rgba(255, 255, 255, 0.1);
+}
+.is-dark .comments .comment-header .user,
+.is-dark .comments .comment-header .user a {
+  color: #fff;
+}
+.is-dark .comments .deleted-comment {
+  color: #FFF;
+  background: rgba(255, 255, 255, 0.1);
+}
+.is-dark .comments .comment:not(:last-child) {
+    border-color: rgba(255, 255, 255, 0.1);
+}
+.is-dark .comments .comment-content {
+    color: rgba(255, 255, 255, 0.8);
+}
+.is-dark .comments .comment {
+    background: rgba(255, 255, 255, 0.05);
+}

@@ -1,5 +1,9 @@
 # changelog
 
+## v1.0.7
+
+- Tema Kuro para comentarios
+
 ## v1.0.6
 
 - Tema Leyre para comentarios
