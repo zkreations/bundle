@@ -1,5 +1,9 @@
 # changelog
 
+## v1.0.8
+
+- Nuevos iconos disponibles
+
 ## v1.0.7
 
 - Tema Kuro para comentarios

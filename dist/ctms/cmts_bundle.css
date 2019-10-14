@@ -1,15 +1,22 @@
 /*!
- * Comments Bundle v1.0.7
+ * Comments Bundle v1.0.8
  * Copyright 2018 zkreations
- * Developed by Daniel Abel M. (instagram.com/danie.abel)
+ * Developed by Daniel Abel M. (instagram.com/daniel.abeI/)
  * Licensed under GNU 3.0 (github.com/zkreations/bundle/blob/master/LICENSE)
  */
 @font-face {
   font-family: "bundle";
-  src: url(data:application/font-woff;charset=utf-8;base64,d09GRk9UVE8AAAQwAAsAAAAABeAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAABDRkYgAAABCAAAAQkAAAEurxDG7kZGVE0AAAIUAAAAGgAAABx7bzJ4R0RFRgAAAjAAAAAdAAAAIAAwAARPUy8yAAACUAAAAEkAAABgT3VdeGNtYXAAAAKcAAAAQAAAAUoC1QJXaGVhZAAAAtwAAAAvAAAANhBP0KVoaGVhAAADDAAAAB0AAAAkAxsCA2htdHgAAAMsAAAACgAAAAoEbABsbWF4cAAAAzgAAAAGAAAABgADUABuYW1lAAADQAAAAN4AAAF6w3fvwHBvc3QAAAQgAAAAEAAAACAAAwABeJw9jc1Kw0AURu/kx4QQoi0GFdLSXYXiG7hz59Y3kHYnaTalq86iycSUa0smyWK68jl8piBdzkAWOlFxdQ+Xj3MIWBYQQpznVTx/WQAxgMCDGhlqbKpr680n6JvoW2MPbp6GX4j/4DsS5L26lZ92BOl5BHARQTGIIIjIZAhWL/JgAFcwmi/X8d0yWcSr5Of8tv6KAOSVFGASYjxWgZrIj5CX+wobrHcV41RQ3FB3Opu29kYzpYztMkxxu8947kq/c2zOeFFjjfzAuf5Ix+49Sdj1mJfZIdX7rMhzt+vnLNeCLaZawAQVeBTuqT3N7KNmITjX8RobHS/dQDWXGK7fZYtn6HvfhdNvIwAAAHicY2BgYGQAgjO2i86D6Oszjl+B0QBVKwiQAAB4nGNgZGBg4ANiCQYQYGJgBEIQyQLmMQAABGAANQAAAHicY2BmYmCcwMDKwMHow5jGwMDgDqW/MkgytDAwMDGwcjLAACMDEghIc01hcGBIZEhifPD/AYMeY8T/CJgaRhBLAQgZAfR7C5EAAAB4nGNgYGBmgGAZBkYGEHAB8hjBfBYGDSDNBqQZGZiArKT//8EqEkH0/wVQ9UDAyMaA4NAKMDLR2gaKAADbUgcreJxjYGRgYADiFRvCSuL5bb4ycDMxgMD1GcevwOkchhWMUxgjgFwOBrA0AFQOC/EAeJxjYGRgYIxgYGDQY2IAAcYpDIwMqIAJABtAASMAAAACAAAAAgAAbABsAAAAAFAAAAMAAHicbZA9asNAEEafbFkhxLiL68XgUkIrXBjXRgdw4d5GizAICdbWVXKCdDlGDpAT5C75JG2RwrsM82b2mx8WWPJBxHAiElaBZ7ywDTxnwz1wLM1n4AVvfAdOdH+ljOJXZZZj1cAzdXwPPOdIGjge5068YM1X4ET5H670tFQ0OLj2bdXInxTUemi44BW6um8ugpJO4sfovRQOQ0FGLn+Q/W82ZSw7LbKXFVJZEWXXPsrO184UWW4OZhoqsLt0nxa5lebpVmcFXt9zG7cYeg+TOTt/v3WtsVn+vPAPk6E1xQAAeJxjYGZABowMaAAAAI4ABQ==) format("woff");
+  src: url("fonts/bundle.eot?#iefix") format("embedded-opentype"),
+       url("../../fonts/bundle.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
+/*!
+ * Down Open : "\61"
+ * Up Open   : "\62"
+ * Reply     : "\63"
+ * Reply All : "\64"
+ */
 
 .comments .comment-content,
 .comments ol,
