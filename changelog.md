@@ -1,5 +1,9 @@
 # changelog
 
+## v1.0.10
+
+- Corrección al boton de replicas en el tema Maily
+
 ## v1.0.9
 
 - Tema Maily para comentarios
