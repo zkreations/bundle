@@ -1,0 +1,141 @@
+/*!
+ * Required: cmts_bundle.css
+ * Theme Name: Maily
+ */
+
+/*avatar*/
+.comments .avatar-image-container {
+  background-image: url(../../resources/anon-default.png);
+  background-color: #eee;
+  height: 38px;
+  width: 38px;
+  border-radius: 50%;
+  box-shadow: 0 2px 3px -2px rgba(0,0,0,.5), 0 0 2px 0 rgba(0,0,0,.1);
+  margin-right: 1rem;
+}
+/*coment*/
+.comments .comment {
+  position: relative;
+  margin-top: 2rem;
+}
+/*coment content*/
+.comments .comment-content {
+  color: #757575;
+  padding: 1rem 0 0;
+}
+/*coment block*/
+.comments .comment-block {
+  font-size: 1.1rem;
+  padding-bottom: 2rem;
+  border-bottom: 2px solid #f2f2f2;
+  line-height: 1.6rem;
+}
+/*delete comment*/
+.comments .deleted-comment {
+  background-color: #f3f3f3;
+  padding: 1rem;
+  color: #757575;
+}
+/*toggle*/
+.comment-actions > a,.comments .thread-toggle {
+  position: absolute;
+  right: 0;
+  top: .5rem;
+  z-index: 40;
+}
+.comment-actions > a, .comments .thread-toggle a {
+  font-size: 0;
+  color: #757575;
+}
+.comments .thread-toggle a::before {
+  content: "\61";
+  font-size: 20px;
+  transition: -webkit-transform .3s;
+  transition: transform .3s;
+  transition: transform .3s, -webkit-transform .3s;
+  height: 16px;
+}
+.comments .thread-toggle.thread-expanded a::before {
+  -webkit-transform: rotate(-180deg);
+          transform: rotate(-180deg);
+}
+/*user*/
+.comments .comment-header .user {
+  margin-right: .2rem;
+}
+.comments .comment-header .user, 
+.comments .comment-header .user a {
+  font-style: normal;
+  font-weight: 500;
+  color: #262626;
+}
+/*datetime*/
+.comments .comment-header .datetime {
+    display: block;
+}
+.comments .comment-header .datetime > a {
+  color: #ccc;
+  font-weight: 400;
+  font-size: .95rem;
+}
+/*reply btn*/
+.comment-actions > a::before {
+  content: "\63";
+  font-size: 14px;
+  font-family: bundle!important;
+  font-style: normal!important;
+  font-weight: 400!important;
+  font-variant: normal!important;
+  text-transform: none!important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  display: block;
+}
+.comments .thread-toggle {
+  right: calc(16px + 1rem);
+  margin-top: -2px;
+}
+.comment-replies .thread-chrome {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+.comment-replybox-thread {
+    margin-top: 2rem;
+}
+/*replies*/
+.comments .comment-replies .comment-block {padding-bottom: 0;border-bottom: 0;margin-bottom: 0;}
+.comments .comment-replies .comment, 
+.comments .comment-replybox-single,
+.comments .comment-replybox-thread {
+  margin-left: 3rem;
+}
+.comments .comment-replies .comment {
+  padding-left: 1.5rem;
+  border-left: 2px solid #f2f2f2;
+  padding-bottom: 0;
+  padding-top: 0;
+}
+.comments .comment-replies .comment:not(:last-child) {
+  margin-bottom: 2rem;
+}
+/* form */
+.comments .comment-form {
+  padding-top: 1rem;
+}
+/* Dark background? 
+-----------------------------------------*/
+.is-dark .comments .comment-header .user,
+.is-dark .comments .comment-header .user a {
+  color: #fff;
+}
+.is-dark .comments .deleted-comment {
+  color: #FFF;
+}
+.is-dark .comments .comment-block, .is-dark .comments .comment {
+  border-color: rgba(255, 255, 255, 0.1);
+}
+.is-dark .comments .comment-content {
+  color: rgba(255, 255, 255, 0.5);
+}

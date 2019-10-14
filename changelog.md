@@ -1,5 +1,9 @@
 # changelog
 
+## v1.0.9
+
+- Tema Maily para comentarios
+
 ## v1.0.8
 
 - Nuevos iconos disponibles
