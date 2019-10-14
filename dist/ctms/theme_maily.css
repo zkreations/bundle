@@ -98,7 +98,10 @@
   margin-top: -2px;
 }
 .noAllowNewComments.comments .thread-toggle {
-    right: 0;
+  right: 0;
+}
+.noAllowNewComments.comments .thread-toggle a::before {
+  height: 7px;
 }
 .comment-replies .thread-chrome {
   margin-top: 2rem;
